@@ -20,9 +20,9 @@ services:
       - POSTGRES_PASSWORD=password
 
   server:
-    image: docker.wapps.dev/cloudsonic:release_live.15
+    image: softwaregoodiebag/cloudsonic:latest
     ports:
-      - "8081:8081"
+      - "80:8081"
     volumes:
       - /source/data/media/music:/library
     deploy:
