@@ -1,6 +1,8 @@
 # Cloudsonic
 Cloudsonic is a lightweight mobile first web based music player.
 
+<img src="https://raw.githubusercontent.com/softwaregoodiebag/cloudsonic/master/mobile.jpeg" width="200" height="400">
+
 ## Release version 1.0.0 task list
 As it stands the player is fully functional for scanning and streaming tracks. Progress towards version 1.0.0 will depend on interest in the project (Project stars + watches). 
 
