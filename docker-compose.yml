@@ -1,0 +1,41 @@
+version: '3.7'
+
+networks:
+  internal:
+
+services:
+  db:
+    image: postgres:11
+    restart: always
+    networks:
+      - internal
+    deploy:
+      restart_policy:
+        condition: any
+      mode: replicated
+      replicas: 1
+    environment:
+      - POSTGRES_DB=cloudsonic
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+
+  server:
+    image: docker.wapps.dev/cloudsonic:release_live.15
+    ports:
+      - "8081:8081"
+    volumes:
+      - /source/data/media/music:/library
+    deploy:
+      restart_policy:
+        condition: any
+      mode: replicated
+      replicas: 1
+      update_config:
+        delay: 2s
+    networks:
+     - internal
+    environment:
+     - CLOUDSONIC_DB_HOST=db
+     - CLOUDSONIC_DB_USER=admin
+     - CLOUDSONIC_DB_PASSWORD=password
+     - CLOUDSONIC_MAX_INDEXER_THREADS=30
