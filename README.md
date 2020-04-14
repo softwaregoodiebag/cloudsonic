@@ -1,7 +1,7 @@
 # Cloudsonic
 Cloudsonic is a lightweight mobile first web based music player.
 
-<img src="https://raw.githubusercontent.com/softwaregoodiebag/cloudsonic/master/mobile.jpeg" width="200" height="400">
+<img src="https://raw.githubusercontent.com/softwaregoodiebag/cloudsonic/master/images/mobile.jpeg" width="200" height="400">
 
 ## Release version 1.0.0 task list
 As it stands the player is fully functional for scanning and streaming tracks. Progress towards version 1.0.0 will depend on interest in the project (Project stars + watches). 
@@ -43,7 +43,7 @@ You will then be asked to change the admin account password.
 ## Supporting development
 If you enjoyed this project — or just feeling generous, please consider donating to support ongoing development costs. Thank you
 
-[![Donate with PayPal](https://raw.githubusercontent.com/softwaregoodiebag/cloudsonic/master/paypal-donate-button.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K897UR95WQKTN&source=url)
+[![Donate with PayPal](https://raw.githubusercontent.com/softwaregoodiebag/cloudsonic/master/images/paypal-donate-button.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K897UR95WQKTN&source=url)
 
 ## Licensing
 This project is free to use. No tracking
